@@ -1,9 +1,13 @@
 package com.codepath.bestsellerlistapp.networking;
 
+import android.content.Context;
+
+import com.codepath.bestsellerlistapp.R;
 import com.codepath.bestsellerlistapp.models.BestSellerBook;
 import com.codepath.bestsellerlistapp.models.NYTimesAPIResponse;
 
 import java.util.List;
+import java.util.ResourceBundle;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -26,6 +30,7 @@ public class NYTimesApiClient {
 
     // TODO: Replace the below API key with your own generated key
     private static final String API_KEY = "pL0hMAVbscLLysPi00ojDm50i0bOiZ1Y";
+
     private NYTimesService nyTimesService;
 
     public NYTimesApiClient() {
